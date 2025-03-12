@@ -17,7 +17,7 @@ public class JavaUtlity {
 		Random random=new Random();
 		int num = random.nextInt();
 		return num;
-    //this method is created by harivardhan
+    //this method is created by hari vardhan
 	}
 	public String getRequiredDateYYYYMMDD(int days) {
 		  Date dateObj = new Date();
