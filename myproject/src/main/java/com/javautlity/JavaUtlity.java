@@ -1,5 +1,13 @@
-package com.javautlity;
-
+package com.javautli
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+public class JavaUtlity {	
+	public String getSystemDateYYYYMMDD() {
+		Date dateobj=new Date();
+		SimpleDateFormat sdf=new SimpleDateFormat("YYYY-MM-DD");
+		String StartDate=sdf.format(dateobj);
+		return StartDate;		
+	}	
 import java.util.Random;
 public class JavaUtlity {
 	public static int random() {
