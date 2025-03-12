@@ -2,6 +2,7 @@ package com.genricUtlity;
 
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
 public class JavaUtlity {
@@ -18,4 +19,14 @@ public class JavaUtlity {
 		return num;
     //this method is created by harivardhan
 	}
+	public String getRequiredDateYYYYMMDD(int days) {
+		  Date dateObj = new Date();
+		  SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		  String date = sdf.format(dateObj);
+		  
+		  Calendar cal = sdf.getCalendar();
+		  cal.add(Calendar.DAY_OF_MONTH, days);
+		  String requiredDate = sdf.format(cal.getTime());
+		  return requiredDate;
+		 }
 }
