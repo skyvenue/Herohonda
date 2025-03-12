@@ -1,15 +1,11 @@
 package com.javautlity;
 
 import java.util.Random;
-
 public class JavaUtlity {
-	
-	public int getRandomNumber() {
-		  
-		  Random ranDom = new Random();
-		  int ranDomNumber = ranDom.nextInt(5000);
-		  return ranDomNumber;
-		  
-	  }
-
+	public static int random() {
+		Random random=new Random();
+		int num = random.nextInt();
+		return num;
+    //this method is created by harivardhan
+	}
 }
